@@ -1,0 +1,112 @@
+<!-- HTML document declaration with language attribute -->
+<html lang="en">
+
+<head>
+  <!-- Meta tags for character set, viewport, compatibility, and title -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ninja Quiz</title>
+
+  <!-- Linking external CSS stylesheet from Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark text-white">
+
+  <!-- Top section of the page -->
+  <div class="intro py-5 bg-white text-center">
+    <div class="container">
+      <!-- Heading for the quiz -->
+      <h2 class="text-danger display-3 bg-dark"><strong>Ninja Quiz</strong></h2>
+    </div>
+  </div>
+
+  <!-- Result section (initially hidden) -->
+  <div class="result py-5 d-none bg-light text-center">
+    <div class="container lead">
+      <!-- Displaying the user's score -->
+      <p>You are <span class="text-primary display-4 p-3">0%</span> ninja</p>
+    </div>
+  </div>
+
+  <!-- Quiz section -->
+  <div class="quiz py-5 bg-secondary"> <!-- background of main body -->
+    <div class="container">
+      <!-- Heading for the quiz section -->
+      <h2 class="my-5 text-danger bg-dark">Answer the following questions</h2>
+
+      <!-- Form element for the quiz -->
+      <form class="quiz-form text-light">
+
+        <!-- Question 1 -->
+        <div class="my-5">
+          <p class="lead font-weight-normal">1. How many continents are there?</p>
+          <!-- Radio buttons for options -->
+          <div class="form-check my-2">
+            <input type="radio" name="q1" value="A" class="form-check-input">
+            <label class="form-check-label">four</label>
+          </div>
+          <div class="form-check my-2">
+            <input type="radio" name="q1" value="B" required class="form-check-input">
+            <label class="form-check-label">seven</label>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="my-5">
+          <p class="lead font-weight-normal">2. What is a doctor's favorite snack?</p>
+          <!-- Radio buttons for options -->
+          <div class="form-check my-2">
+            <input type="radio" name="q2" value="A" class="form-check-input">
+            <label class="form-check-label">Chocolate</label>
+          </div>
+          <div class="form-check my-2">
+            <input type="radio" name="q2" value="B" required class="form-check-input">
+            <label class="form-check-label">Apple</label>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="my-5">
+          <p class="lead font-weight-normal">3. What is the most played sport?</p>
+          <!-- Radio buttons for options -->
+          <div class="form-check my-2">
+            <input type="radio" name="q3" value="A" class="form-check-input">
+            <label class="form-check-label">Soccer</label>
+          </div>
+          <div class="form-check my-2">
+            <input type="radio" name="q3" value="B" required class="form-check-input">
+            <label class="form-check-label">Basketball</label>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="my-5">
+          <p class="lead font-weight-normal">4. How many days in a month?</p>
+          <!-- Radio buttons for options -->
+          <div class="form-check my-2">
+            <input type="radio" name="q4" value="A" class="form-check-input">
+            <label class="form-check-label">Varies</label>
+          </div>
+          <div class="form-check my-2">
+            <input type="radio" name="q4" value="B" required class="form-check-input">
+            <label class="form-check-label">Thirty</label>
+          </div>
+        </div>
+
+        <!-- Submit button -->
+        <div class="text-center">
+          <input type="submit" class="btn btn-light">
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Including external JavaScript file -->
+  <script src="app.js"></script>
+</body>
+
+</html>
